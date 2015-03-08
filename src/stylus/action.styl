@@ -1,0 +1,106 @@
+transform-origin(n)
+  -webkit-transform-origin n
+  -ms-transform-origin n
+  transform-origin n
+
+animation(n)
+  -webkit-animation n
+  animation n
+
+transition(n)
+  -webkit-transition n
+  -moz-transition n
+  transition n
+
+box-shadow(n)
+  -webkit-box-shadow n
+  -moz-box-shadow n
+  box-shadow n
+
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+modal-transition = top 300ms ease-in-out,opacity 300ms ease-in-out
+
+.modal
+  text-align left
+  display none
+  width 55%
+  margin auto
+  background #eee
+  z-index 1000
+  position fixed
+  top 5%
+  left 0 
+  right 0
+  opacity 0
+  border-radius(2px)
+  transition(modal-transition)
+  box-shadow(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21))
+  h4
+    font-size 2.28rem
+    line-height 2.508rem
+    margin 0
+    font-weight 400
+    -webkit-font-smoothing antialiased
+  .modal-footer
+    border-top 1px solid rgba(0, 0, 0, 0.1)
+    text-align right
+    padding 4px 6px
+
+.modal-content
+  padding 20px
+
+modal-button-transition = background 0.2s ease, border-color 0.2s ease
+
+.modal-button
+  cursor pointer
+  outline none
+  border none
+  margin 6px 0
+  padding 7px 10px
+  font-size 1rem
+  background-color transparent
+
+.modal-show 
+  display block
+  top 10%
+  opacity 1
+
+.modal-overlay
+  position fixed
+  z-index 999
+  top 0
+  left 0
+  bottom 0
+  right 0
+  height 115%
+  width 100%
+  background black
+  opacity 0
+  transition(opacity 300ms ease-in-out)
+
+.modal-overlay-show
+  opacity .5
+
+tip-box-shadow = 0 1px 1px rgba(0,0,0,0.25),0 0 1px rgba(0,0,0,0.35)
+
+.action-tip
+  text-align center
+  position fixed
+  top -80px
+  left 50%
+  background rgba(255,255,255,0.97)
+  padding 12px 25px
+  margin-bottom 0
+  font-size 14px
+  box-shadow(tip-box-shadow)
+  border-radius(0 0 4px 4px)
+  z-index 9999
+  transition(top 300ms ease-in-out)
+
+.action-tip-show
+  top 0
+  
